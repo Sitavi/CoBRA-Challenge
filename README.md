@@ -1,6 +1,11 @@
 # CoBRA-Challenge
 ROS2 Node from PIDTeam for CoBRA-Challenge
 
+Challenge with small autonomous airships for payload grasping and delivery.
+
+This approach uses 3D localization and navigation with AprilTag-based vision and closed-loop control for guidance
+and positioning.
+
 ## Prerequisites
 Must be installed both on PC and remote Raspberry Pi (tested on Pi5) 
 - Ubuntu 24.04 
