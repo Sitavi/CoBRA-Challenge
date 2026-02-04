@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="my_robot">
+    <!-- Définition du lien de base -->
+    <link name="base_link">
+        <!-- Ajoute ici les propriétés physiques du lien, comme la masse, la taille, etc. -->
+    </link>
+
+    <!-- Définition du lien de la caméra -->
+    <link name="camera_link">
+        <!-- Propriétés de la caméra -->
+    </link>
+
+    <!-- Transformation entre base_link et camera_link -->
+    <joint name="base_to_camera" type="fixed">
+        <parent link="base_link"/>
+        <child link="camera_link"/>
+        <origin xyz="0.5 0.0 0.2" rpy="0 0 0"/> <!-- Définir la position de la caméra par rapport à base_link -->
+    </joint>
+</robot>
